@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Market Research Survey</h1>
+            <p id="description" class="description text-center">Please take a few minutes to tell us more about you and your preferences</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age <span class="clue">(Optional)</span></label>
+                <input type="number" id="number" name="age" min="12" max="90" class="form-control" placeholder="Age">
+
+            </div>
+
+            <div class="form-group">
+                <p>What is your gender?</p>
+                <select name="gender" id="dropdown" class="form-control">
+                    <option value="Male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="non-binary">Non-binary</option>
+                    <option value="no-answer">Prefer not to answer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What is your marital status?</p>
+                <input type="radio" name="status" class="input-radio" value="single">
+                <label for="single">Single</label>
+                <input type="radio" name="status" class="input-radio" value="married">
+                <label for="married">Married</label>
+                <input type="radio" name="status" class="input-radio" value="divorced">
+                <label for="divorced ">Divorced</label>
+                <input type="radio" name="status" class="input-radio" value="widowed">
+                <label for="widowed ">Widowed</label>
+                <input type="radio" name="status" class="input-radio" value="no-answer">
+                <label for="no-answer">Prefer not to answer</label>
+            </div>
+
+            <div class="form-group">
+                <p>What is your employment status?</p>
+                <input type="radio" name="employment" class="input-radio" value="full-time">
+                <label for="full-time">Employed full time</label>
+                <input type="radio" name="employment" class="input-radio" value="part-time">
+                <label for="part-time">Employed part time</label>
+                <input type="radio" name="employment" class="input-radio" value="self-employed">
+                <label for="Self-employed ">Self-employed</label>
+                <input type="radio" name="employment" class="input-radio" value="unemployed">
+                <label for="Unemployed ">Unemployed</label>
+                <input type="radio" name="employment" class="input-radio" value="student">
+                <label for="student">Student</label>
+            </div>
+
+            <div class="form-group">
+                <p>What is the highest level of education you have completed?</p>
+                <input type="radio" name="education" class="input-radio" value="doctorate">
+                <label for="doctorate ">Doctorate</label>
+                <input type="radio" name="education" class="input-radio" value="masters">
+                <label for="masters">Masters degree</label>
+                <input type="radio" name="education" class="input-radio" value="bachelors">
+                <label for="bachelors">Bachelors degree</label>
+                <input type="radio" name="education" class="input-radio" value="diploma">
+                <label for="diploma">Diploma</label>
+                <input type="radio" name="education" class="input-radio" value="high">
+                <label for="high">High school</label>
+            </div>
+
+            <div class="form-group">
+                <p>When did you last buy a sportswear?</p>
+                <input type="radio" name="sportswear" class="input-radio" value="amonth">
+                <label for="amonth">Less than a 1 month ago</label>
+                <input type="radio" name="sportswear" class="input-radio" value="sixmonths">
+                <label for="sixmonths">Between 1 and 6 months ago</label>
+                <input type="radio" name="sportswear" class="input-radio" value="between">
+                <label for="between">Between 6 months and 1 year ago</label>
+                <input type="radio" name="sportswear" class="input-radio" value="morethan">
+                <label for="morethan">More than 1 year ago</label>
+                <input type="radio" name="sportswear" class="input-radio" value="remember">
+                <label for="remember">I do not remember</label>
+            </div>
+
+            <div class="form-group">
+                <p>What is your preferred design for sportswear?
+                    <span class="clue"><br>(Check all that apply)</span>
+                </p>
+                <input type="checkbox" name="design" class="input-checkbox" value="minimalist">
+                <label for="minimalist">Minimalist (with 1 or 2 colors)</label>
+                <input type="checkbox" name="sportswear" class="input-checkbox" value="bold">
+                <label for="bold">Bold colors and design (e.g.neon colors)</label>
+                <input type="checkbox" name="sportswear" class="input-checkbox" value="slogans">
+                <label for="slogans">With slogans and pictures on</label>
+                <input type="checkbox" name="sportswear" class="input-checkbox" value="other">
+                <label for="other">other</label>
+            </div>
+
+            <div class="form-group ">
+                <p>Which of the followings would influence your decision to buy a certain brand?
+                    <span class="clue"><br>(Check all that apply)</span>
+                </p>
+                <input type="checkbox" name="decision" class="input-checkbox" value="price">
+                <label for="price">Price</label>
+                <input type="checkbox" name="decision" class="input-checkbox" value="quality">
+                <label for="quality">Quality</label>
+                <input type="checkbox" name="decision" class="input-checkbox" value="value">
+                <label for="value">Value</label>
+                <input type="checkbox" name="decision" class="input-checkbox" value="brand">
+                <label for="brand">Brand</label>
+                <input type="checkbox" name="decision" class="input-checkbox" value="" other ">
+                <label for="other ">Other</label>
+            </div>
+
+            <div class="form-group ">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment " id="comments " class="input-textarea " placeholder="Type your comment here... "></textarea>
+            </div>
+
+            <div class="form-group ">
+                <button type="submit " id="submit " class="submit-button ">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js "></script>
+</body>
+
+</html>
